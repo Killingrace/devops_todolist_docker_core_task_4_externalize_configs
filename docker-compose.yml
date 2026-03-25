@@ -34,6 +34,8 @@ services:
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=todo-db
+      - DB_PORT=${DB_PORT}
+      - DB_ENGINE=${DB_ENGINE}
     networks:
       - todoapp-net
     depends_on:
@@ -52,6 +54,8 @@ services:
       - DB_USER=${DB_USER}
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=todo-db
+      - DB_PORT=${DB_PORT}
+      - DB_ENGINE=${DB_ENGINE}
     networks:
       - todoapp-net
     depends_on:
